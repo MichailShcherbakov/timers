@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.vue\" \"src/**/*.js\" --fix",
     "fmt": "prettier --write \"src/**/*.vue\" \"src/**/*.js\"",
