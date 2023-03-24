@@ -1,7 +1,28 @@
-# Vue 3 + Vite
+# Belyaev Studio Junior Frontend Developer Task - Simple Timers App
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Simple timers app wrote on pure vue 3
 
-## Recommended IDE Setup
+## Features:
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [x] Play/pause/stop timers
+- [x] Creating unlimited timers
+
+## Preview
+
+[Link](https://timers-dev-task.netlify.app/)
+
+<img alt src="https://github.com/MichailShcherbakov/timers/blob/master/screenshots/main.png?raw=true" />
+
+## Stack
+
+<h4>Web</h4>
+
+- Vue 3
+- Composition API
+
+## Author
+
+<a href="https://github.com/MichailShcherbakov" style="display: flex; align-items: center; border-radius: 50%; overflow: 'hidden';">
+  <img src="https://avatars.githubusercontent.com/u/50011226?s=96&v=4" style="width: 44px; margin-right: 1rem"/>
+  <span>@Me</span>
+</a>
