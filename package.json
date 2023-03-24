@@ -1,0 +1,42 @@
+{
+  "name": "@MichailShcherbakov/timers",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "author": "MichailShcherbakov <50011226+MichailShcherbakov@users.noreply.github.com>",
+  "bugs": {
+    "url": "https://github.com/MichailShcherbakov/timers/issues"
+  },
+  "homepage": "https://github.com/MichailShcherbakov/timers#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichailShcherbakov/timers.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.vue\" \"src/**/*.js\" --fix",
+    "fmt": "prettier --write \"src/**/*.vue\" \"src/**/*.js\"",
+    "fmt:check": "prettier --check \"src/**/*.vue\" \"src/**/*.js\""
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.10.0",
+    "prettier": "^2.8.7",
+    "vite": "^4.2.0",
+    "vite-tsconfig-paths": "^4.0.7"
+  }
+}
