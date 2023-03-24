@@ -10,7 +10,7 @@
   padding-left: 3.125rem;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 1024px) {
   .ui-grid-item {
     flex-basis: 33.3333%;
     -webkit-box-flex: 0;
@@ -19,7 +19,7 @@
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1024px) {
   .ui-grid-item {
     flex-basis: 50%;
     -webkit-box-flex: 0;
@@ -28,7 +28,7 @@
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .ui-grid-item {
     flex-basis: 100%;
     -webkit-box-flex: 0;
