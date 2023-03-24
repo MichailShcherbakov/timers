@@ -10,8 +10,6 @@
     "plugin:vue/base",
     "plugin:vue/essential",
     "plugin:vue/vue3-essential",
-    "@vue/eslint-config-prettier",
-    "plugin:prettier/recommended",
     "prettier"
   ],
   "parser": "vue-eslint-parser",
@@ -19,5 +17,5 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["import", "prettier", "vue"]
+  "plugins": ["vue", "import", "prettier"]
 }
