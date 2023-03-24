@@ -4,23 +4,21 @@ import PauseIcon from "../../assets/icons/pause.svg?component";
 import ControlButton from "./ControlButton.vue";
 
 const props = defineProps({
-  value: Boolean,
+  isPlaying: Boolean,
 });
 
 const emit = defineEmits(["play", "pause"]);
 
 function clickHandler() {
-  const isPlaying = props.value;
-
-  emit(isPlaying ? "pause" : "play");
+  emit(props.isPlaying ? "pause" : "play");
 }
 </script>
 
 <template>
-  <ControlButton :onClick="clickHandler">
+  <ControlButton :onClick="clickHandler" :isActive="isPlaying">
     <template #icon>
-      <PlayIcon v-if="value" />
-      <PauseIcon v-else />
+      <PauseIcon v-if="isPlaying" />
+      <PlayIcon v-else />
     </template>
   </ControlButton>
 </template>

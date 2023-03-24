@@ -2,17 +2,29 @@
 import PlayButton from "./buttons/PlayButton.vue";
 import StopButton from "./buttons/StopButton.vue";
 import { useTimer } from "../hooks/useTimer";
+import { computed } from "vue";
+import { getFormattedTimeDiff } from "../tools/getFormattedTimeDiff";
 
-const { play, stop, pause } = useTimer();
+const { currentTime, isPlaying, play, stop, pause } = useTimer();
+
+const formattedCurrentTime = computed(() =>
+  getFormattedTimeDiff(currentTime.value),
+);
 </script>
 
 <template>
-  <div class="timer-plate timer-plate--disabled">
-    <span class="timer-plate__display">1:20:32</span>
+  <div
+    class="timer-plate"
+    :class="{
+      'timer-plate--active': isPlaying,
+      'timer-plate--disabled': !isPlaying,
+    }"
+  >
+    <span class="timer-plate__display">{{ formattedCurrentTime }}</span>
     <hr class="timer-plate__divider" />
     <div class="timer-plate__controls">
-      <PlayButton :onPlay="play" :onPause="pause" />
-      <StopButton :onStop="stop" />
+      <PlayButton :isPlaying="isPlaying" :onPlay="play" :onPause="pause" />
+      <StopButton :onStop="stop" :isActive="isPlaying" />
     </div>
   </div>
 </template>
