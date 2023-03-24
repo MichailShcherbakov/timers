@@ -8,7 +8,7 @@ const TIME_STEPS = {
   minutes: ONE_MINUTE,
   seconds: ONE_SECOND,
   milliseconds: ONE_MILLISECOND,
-}
+};
 
 export function getTimeDiff(start, end) {
   let diff = end.getTime() - start.getTime();
@@ -17,8 +17,8 @@ export function getTimeDiff(start, end) {
     hours: 0,
     minutes: 0,
     seconds: 0,
-    milliseconds: 0
-  }
+    milliseconds: 0,
+  };
 
   if (diff < 0) {
     return timeDiff;
@@ -32,4 +32,3 @@ export function getTimeDiff(start, end) {
 
   return timeDiff;
 }
-

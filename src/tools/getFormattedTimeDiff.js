@@ -1,8 +1,11 @@
-import { padWithZeroes } from './padWithZeroes';
+import { padWithZeroes } from "./padWithZeroes";
 
 export function getFormattedTimeDiff(time) {
   if (time?.hours > 0) {
-    return `${time.hours}:${padWithZeroes(time.minutes, 2)}:${padWithZeroes(time.seconds, 2)}`;
+    return `${time.hours}:${padWithZeroes(time.minutes, 2)}:${padWithZeroes(
+      time.seconds,
+      2,
+    )}`;
   }
 
   if (time?.minutes > 0) {
@@ -15,4 +18,3 @@ export function getFormattedTimeDiff(time) {
 
   return `0:00:00`;
 }
-

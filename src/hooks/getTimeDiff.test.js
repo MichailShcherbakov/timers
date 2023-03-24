@@ -1,5 +1,5 @@
-import { describe, it, expect } from 'vitest';
-import { getTimeDiff } from './getTimeDiff'
+import { describe, it, expect } from "vitest";
+import { getTimeDiff } from "./getTimeDiff";
 
 describe("getTimeDiff", () => {
   it("should return time diff", () => {
@@ -11,8 +11,8 @@ describe("getTimeDiff", () => {
       minutes: 12,
       seconds: 36,
       milliseconds: 125,
-    })
-  })
+    });
+  });
 
   it("should return empty time diff when start time is greater end time", () => {
     const endFrom = new Date("2023-03-24T03:00:00.000");
@@ -23,6 +23,6 @@ describe("getTimeDiff", () => {
       minutes: 0,
       seconds: 0,
       milliseconds: 0,
-    })
-  })
+    });
+  });
 });
