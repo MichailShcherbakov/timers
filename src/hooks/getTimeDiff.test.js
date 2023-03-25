@@ -15,8 +15,8 @@ describe("getTimeDiff", () => {
   });
 
   it("should return empty time diff when start time is greater end time", () => {
-    const endFrom = new Date("2023-03-24T03:00:00.000");
     const startFrom = new Date("2023-03-24T04:12:36.125");
+    const endFrom = new Date("2023-03-24T03:00:00.000");
 
     expect(getTimeDiff(startFrom, endFrom)).toEqual({
       hours: 0,

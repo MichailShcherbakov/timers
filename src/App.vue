@@ -38,10 +38,8 @@ body {
 
   justify-content: center;
 
-  width: 100wh;
-  height: 100vh;
-
-  overflow: auto;
+  width: 100%;
+  height: auto;
 
   padding: 4.5rem;
 }
@@ -56,6 +54,12 @@ body {
 
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 920px) {
+  .main-container {
+    width: 100%;
+  }
 }
 
 @media (max-width: 380px) {
